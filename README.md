@@ -81,4 +81,13 @@ The system administration lab is to demonstrate how to simulate the onboarding p
 6. Click the Enabled radial, then apply, then OK
 ![image](https://github.com/user-attachments/assets/a6dd5c3e-975c-4802-bcca-ea7ac8f960cd)
 ![image](https://github.com/user-attachments/assets/2f76b124-21cb-42af-be49-e53dcf30dec2)
-Get the script from <a href
+Get the script from <a href="https://github.com/stephenhammond05/mapdrive.git" target="_blank">here</a>
+7. Place script in Logon folder located at "\\contoso.com\SysVol\contoso.com\Policies\{policy id}\User\Scripts\Logon"
+8. Go to User Configuration > Policies > Windows Settings > Scripts(Logon/Logoff)
+9. Right Click Logon and go to properties, then add the script named mapdrive.ps1 and select open > OK > Apply Changes > OK
+![image](https://github.com/user-attachments/assets/0d6c0734-b72d-4cb9-8b55-51136bd52765)
+Go to User Configuration > Windows Settings > Administrative Templates > Start Menu and Taskbar and go to "Remove Run Menu from Start Menu"
+Right-click and go edit > Enable, then Apply, OK
+![image](https://github.com/user-attachments/assets/54db21a5-22c1-4a87-bf27-e76a1ffd39c2)
+Close all of the editing windows and go to Command Prompt and type in "gpupdate /force" to put all the new settings into effect
+
